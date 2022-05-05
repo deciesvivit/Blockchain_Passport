@@ -1,6 +1,7 @@
 from passporteye import read_mrz
 import cv2
 import os
+import pyperclip
 
 
 
@@ -41,10 +42,4 @@ nft_desc=('Nationality :'+ mrz_data['nationality'] + 'Given Name :'+ mrz_data['n
 
 
 
-os.system("arweave deploy /Users/aryankaushik/Downloads/pss/6565_faces.jpg --key-file /Users/aryankaushik/Downloads/arweave-key-xvDg99sDJZtQMK_WCWZk0h6IJqSBDPuNuzx8WipKnjQ.json")
-
-
-
-
-
-
+pyperclip.copy(nft_desc)
